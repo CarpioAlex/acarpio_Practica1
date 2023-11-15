@@ -1,0 +1,463 @@
+/* Fuentes que he elegido 
+Teko : Titulos
+Ubuntu : Texto
+
+*/
+
+  @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;700&family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+
+/* Quito el margen y el acolchado de toda la página con el selector universal, para poder manejarlo individualmente en los elementos y que no me moleste luego, al añadir box-sizing: border-box el margen y acolchado que añada a posteriori formaran parte del calculo de la propia caja y no lo sumen luego para que no se me hagan cosas extrañas. */
+
+* {
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+/* Margen para toda el cuerpo */
+
+body {
+    width: 89%;
+    margin: auto;
+    background-color: white;
+    
+    
+    
+}
+
+/* Fuente para toda la cabecera, y le quito el color feo a los enlaces, y el underline. */
+
+main, #cabecera {
+    font-family: Ubuntu, Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Esta clase es un poco especial, la utilizo para que no se amontonen los elementos flotados, explicación completa en el readme.md del repositorio. */
+
+.limpiar::after {
+    content:"";
+    clear: both;
+   display: block;
+}
+
+
+
+/* Inicio reglas para el NAV */
+
+#barra_navegacion {
+    font-family: Teko, Arial, Helvetica, sans-serif;
+    width: 100%;
+    min-height: 30px;
+    margin-bottom: 60px;
+    
+}
+
+
+#titulo_nav {
+    position: absolute;
+    line-height: 50px;
+    left: 500px;
+    font-size: 20px;
+    color: black;
+
+/* Pequeña animación que he utilzado para animar el título del nav */
+
+    letter-spacing: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+        typing 4s steps(60),
+        cursor .4s step-end infinite alternate;
+}
+
+
+@keyframes typing {
+    from { width:  0;}
+    to { width: 100%; }
+}
+
+/* Posicionamiento y estilo de los elementos del nav */
+
+#logo_nav, #enlaces_nav {
+    width: 50%;
+    background-color:#B0DDE495 ;
+    float: left;
+    height: 60px;
+    box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
+}
+    /* Enlaces del Nav */
+        #enlaces_nav a {
+            text-decoration: none;
+            position: relative;
+            font-weight: 500;
+            margin-left: 20px;
+            left: 400px;
+            color: black;
+
+        }
+        /* Pequeña animación al pasar el ratón por encima */
+        #enlaces_nav a::before {
+            content:"";
+            position: absolute;
+            top:100%;
+            left: 0;
+            width: 0;
+            height: 3px;
+            transition: .3s;
+            background-color: black;
+        }
+
+        #enlaces_nav a:hover::before {
+            width: 100%;
+        }
+
+/* Controla la posicion individual para hacer pequeños ajustes usando padding o movimientos de Logo y Enlaces. */
+
+#logo_nav {
+    padding-left: 10px;
+    line-height: 35px;
+   
+}
+
+#enlaces_nav {
+    line-height: 35px;
+}
+
+/* Fin reglas para el NAV */
+
+/* Reglas cabecera */
+
+#cabecera {
+    background-color: #ffffff99;
+    min-height: 100px;
+    width: 100%;
+ 
+    
+}
+
+/* Fin Reglas cabecera */
+
+/* Reglas columnas centrales */ 
+
+#contenedor_columna { /* Establece el tamaño total que tendrá el contenedor de las columnas */
+    width: 100%;
+    min-height: 400px;
+    margin-top: 40px;
+}
+
+#contenedor_columna .columna { /* Cada columna individual: */
+
+    width: 30%;
+    min-height: 400px;
+    background-color:#fff2ec;
+    float:left;
+    max-height: 300px;
+    border-radius: 25px;
+    text-align: center;
+    padding-top: 100px;
+    line-height: 23px;
+}
+
+
+
+
+/* Añade un efecto al pasar el raton por encima */
+
+#contenedor_columna .columna:hover {
+    box-shadow: 3px 14px 15px -3px rgba(0,0,0,0.1);
+    
+    
+}
+
+.columna_central {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.columna_central img {
+    object-fit: cover;
+    width: 55%;
+    height: auto;
+    padding: 5px;
+    margin-top: -60px;
+   filter: grayscale(.2);
+   position: relative;
+}
+
+/* Devuelve el color a la imagen al pasar el raton por encima  y pone mas filtros, quería probar unos cuantos de la propiedad filter.*/
+.columna_central img:hover {
+    filter: grayscale(0);
+    filter: contrast(1);
+    filter: brightness(1.1)
+}
+
+/* Fin reglas columnas centrales */
+
+/* Reglas texto bajo columnas */
+
+.texto_bajocol {
+    background-color: #ffccb3;
+
+    display: inline-block;
+    margin-top: 100px;
+}
+
+
+
+.texto_bajocol p { /* Selecciona todo el texto que se encuentra debajo de las columnas principales, para colocarlo y estilizar. */
+    text-align: center;
+    position: relative;
+    line-height: 40px;
+    padding: 5px;
+    top: -30px;
+    margin-left: 20px;
+    padding-top: 20px ;
+   
+}
+
+/* Esto solo está para probar el pseudoelemento selection. Marca de color diferente lo seleccionado. Como un subrayado. */
+
+.texto_bajocol::selection {
+    color: yellow;
+    background-color: rgba(255, 0, 0, 0.199);
+}
+
+/* Fin reglas texto bajo columnas */
+
+/* Footer */
+
+#footer {
+    width: 100%;
+    min-height: 10px;
+    background-color: #010101b6;
+    margin-top: 20px;
+    font-family: Teko, Arial, Helvetica, sans-serif;
+    
+}
+
+#nombre_pie {
+    display: inline;
+    color: white;
+    font-size: large;
+    position: relative;
+    left: 600px;
+    top: 30px;
+    
+
+}
+
+#contacto{
+    text-decoration: none;
+    display: inline;
+    position: relative;
+    left: 1200px;
+    top: 20px;
+    color: white;
+
+}
+/* Colorea el <a> de contacto al pasar el ratón por encima */
+#contacto:hover {
+    color: #ff5500;
+    border-bottom: 2px solid red;
+}
+
+/* Imagenes del footer */
+
+footer img {
+    position: relative;
+    height: auto;
+    width: 30px;
+    margin: 5px;
+    display: inline;
+    filter: grayscale(1); /*Hace que los iconos estén "apagados" hasta que pasas el ratón por encima junto al hover de abajo. */
+    text-decoration: none;
+    top: -15px;
+}
+
+footer img:hover { 
+    filter: grayscale(0);
+
+}
+
+/* Reglas Audio */
+
+
+    
+
+
+.audio_main section {
+    margin-top: 5px;
+    padding: 5px;
+    
+}
+/* Selector muy chulo, colorea y aplica estilos a los elementos pares o impares para estilizar rapidamente varios elementos sin importar si son 4 o 400, uno si y uno no. */
+.audio_main section:nth-of-type(odd) {
+    background-color: lightblue;
+}
+
+.audio_main section:nth-of-type(even) {
+    background-color: rgb(142, 205, 205);
+}
+
+.audio_main audio /* Para mover todos los audios al centro a la vez. */
+{
+   margin-left: 45%;
+    border: 2px solid rgb(151, 151, 242);
+    
+}
+
+
+/* Fin reglas audio */
+
+/* Inicio reglas video */
+
+
+.contenedor_videos {
+    background-image: url(./Recursos/Imagenes/Sprinkle.svg);
+    min-height: 400px;
+    width: 100%;
+}
+
+.contenedor_videos section video { /* Selector descendiente para estilizar y mover todos los videos. */
+    width: 50%;
+    height: 100%;
+    position: relative;
+    margin: 40px;
+    margin-left: 325px;
+    border: solid 4px #2d0f17;
+    margin-bottom: 20px;
+    
+}
+
+#titulo_video{
+    margin-left:50%;
+    position: relative;
+    bottom: -20px;
+    font-family: Teko, Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: #70263a;
+    
+}
+
+.video > span { /* Estiliza el color del texto junto a cada video. */
+     color: #431722;
+    display: block;
+    text-align: justify;
+    padding: 10px;
+    font-size: 12px;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+/* Fin reglas video */
+
+
+
+/* Inicio reglas taules */
+
+#tabla_principal {  /* Reglas generales y posición de la tabla */
+        border-collapse: collapse;
+        border: 1px;
+        min-width: 430px;
+        margin-left: 33%;
+      }
+
+#tabla_principal tr th  { /* Selector solo para estilizar las cabeceras. */
+
+background-color: lightblue;
+font-family: Teko;
+text-align: left;
+}
+
+
+#tabla_principal th, #tabla_principal td { /* Espaciado entre contenido. */
+    padding: 13px 16px;
+
+    
+}
+
+/* Colorear y añadir bordes */
+
+#tabla_principal tr {
+    font-family: Ubuntu, Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid #a49f9f;
+    
+
+}
+
+#tabla_principal tr:nth-of-type(odd) {
+    background-color: #eff8fa
+    
+}
+
+#tabla_principal tr:last-of-type { /* Para probar la pseudoclase last of type. Añade un borde  diferente al final de la tabla.*/
+    border-bottom: 2px solid #009879;
+    
+}
+
+#tabla_principal tr:hover { /* Remarcar la tabla al pasar el raton por encima. */
+    font-weight: bold;
+    color: #3dc1a6;
+    
+
+}
+/* Fin reglas taules */
+
+
+
+
+/* Reglas generales para estilizar cosas pequeñas o que he añadido en el último momento. */
+
+.importante_naranja { /* Para remarcar texto en cualquier sitio */
+    color: #ff5500;
+    font-weight: 500;
+    font-style: bold ;
+}
+
+#gifsonido { /* Pequeños ajustes antes de entregar */
+    display: inline-block;
+    position: relative;
+    height: auto;
+    width: 150px;
+    right: 470px;
+    top: 160px;
+    margin: auto;
+}
+
+.cabecera_audios {
+    position: relative;
+    left: 50%;
+}
+
+
+
+#altavoz {
+    width: 5.3%;
+    height: auto;
+    position: relative;
+    float: left;
+}
+
+
+/* Coloreado de footer individual, al principio no pensaba poner el footer en cada página, pero ya que estoy aprovecho y utilizo una clase extra añadida a cada footer que quiero modificar con la propiedad !important para modificar la especifidad. */
+
+.footervideos {
+    background-color: #b33c0064 !important; 
+}
+
+.footertaules {
+    background-color: #3dc1a752 !important; 
+}
+
+.footeraudios {
+    background-color: #3dc1a752 !important;
+}
+
+.footeraudios div, .footertaules div, .footervideos div {
+    color: black !important;
+}
