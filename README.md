@@ -14,15 +14,21 @@ Al no ser responsive depende del navegador y de la resolución de pantalla se pu
 
 Por si acaso aquí un video de como la veo yo:
 
-(aqui irá el video)
+
+
+!https://github.com/CarpioAlex/acarpio_Practica1/assets/147094237/7e6f06ac-509b-4aa6-b51b-6128555a6b9d
+
+
 
 Para mover los elementos principales de sitio, en alguna de las páginas he utilizado position:float y una clase llamada .limpiarflotadores con clear:both como propiedad para poder alinearlos sin que sea responsive. 
 
-(aqui foto)
+![Foto1](https://github.com/CarpioAlex/acarpio_Practica1/assets/147094237/45ac3a2e-bf91-461c-994c-47d3ccecb26f)
+
 
 Primero hice este esqueleto para luego colocar cada cosa:
 
-(aqui foto)
+![Captura de pantalla 2023-11-12 173204](https://github.com/CarpioAlex/acarpio_Practica1/assets/147094237/ad9d257c-4c29-441c-b9f1-d635008aafd3)
+
 
 ## 2 - Index.html
 
