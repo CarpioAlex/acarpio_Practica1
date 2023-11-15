@@ -89,5 +89,10 @@ Pseudoclase
 
 
 
+Animaciones de nav y titulo inspirados en:
+
+https://www.youtube.com/watch?v=1G7kQ_EC_V4
+
+https://www.youtube.com/watch?v=yefgBA1CecI
 
 
