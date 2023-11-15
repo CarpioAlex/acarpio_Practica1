@@ -461,3 +461,9 @@ text-align: left;
 .footeraudios div, .footertaules div, .footervideos div {
     color: black !important;
 }
+
+/* La verdad es que me faltaba para la rúbrica un selector de atributos, es bastante incómodo de usar porque tampoco tengo muchos enlaces ni he usado target para los <a> así que lo uso aquí para redondear el borde de todos los videos que estén dentro de una sección y tengan el atributo controls. */
+
+section video[controls] {
+    border-radius: 10px;
+}

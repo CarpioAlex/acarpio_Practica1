@@ -16,7 +16,7 @@ Por si acaso aquí un video de como la veo yo:
 
 
 
-!https://github.com/CarpioAlex/acarpio_Practica1/assets/147094237/7e6f06ac-509b-4aa6-b51b-6128555a6b9d
+https://github.com/CarpioAlex/acarpio_Practica1/assets/147094237/7e6f06ac-509b-4aa6-b51b-6128555a6b9d
 
 
 
@@ -64,4 +64,30 @@ La misma tabla del ejercicio original pero algo más grande y estilizada con dif
 
 ## 6 - Guía de rúbrica
 
-a
+He intentado incluir un poco de todo de lo que pide la rúbrica de la actividad, algunos ejemplos de selectores del código (no todos): 
+
+
+Selector descendente
+
+![Captura de pantalla 2023-11-15 133910](https://github.com/CarpioAlex/acarpio_Practica1/assets/147094237/6626767e-b226-494a-973d-32596ceb66e1)
+
+Reglas @
+
+![Captura de pantalla 2023-11-15 133816](https://github.com/CarpioAlex/acarpio_Practica1/assets/147094237/c7135d41-dee2-4287-a78c-1576adf25091)
+
+Selector de hijos (padre)
+
+![Captura de pantalla 2023-11-15 133925](https://github.com/CarpioAlex/acarpio_Practica1/assets/147094237/45e836dc-d4d8-41b0-89d2-55fe5606d3cc)
+
+Pseudoelemento
+
+![Captura de pantalla 2023-11-15 133837](https://github.com/CarpioAlex/acarpio_Practica1/assets/147094237/3e5b7f28-ce7d-48cc-8a90-69b9608ea3da)
+
+Pseudoclase
+
+![Captura de pantalla 2023-11-15 133918](https://github.com/CarpioAlex/acarpio_Practica1/assets/147094237/1d277508-95c7-449e-9bb9-17240fb35375)
+
+
+
+
+
