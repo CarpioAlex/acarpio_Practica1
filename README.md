@@ -30,6 +30,10 @@ Primero hice este esqueleto para luego colocar cada cosa:
 ![Captura de pantalla 2023-11-12 173204](https://github.com/CarpioAlex/acarpio_Practica1/assets/147094237/ad9d257c-4c29-441c-b9f1-d635008aafd3)
 
 
+ 
+
+	
+
 ## 2 - Index.html
 
 Página principal de la web, es la que más cosas tiene. 
@@ -87,7 +91,7 @@ Pseudoclase
 
 ![Captura de pantalla 2023-11-15 133918](https://github.com/CarpioAlex/acarpio_Practica1/assets/147094237/1d277508-95c7-449e-9bb9-17240fb35375)
 
-
+Algunos elementos tienen efectos al pasar el ratón por encima con :hover, como las columnas de la página principal, los iconos del footer, los enlaces del nav etc. El párrafo de debajo de las columnas tiene un pseudoelemento ::selection para darle un 	        efecto a la hora de seleccionar arrastrando el texto. 
 
 Animaciones de nav y titulo inspirados en:
 
